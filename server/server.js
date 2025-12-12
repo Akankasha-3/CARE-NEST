@@ -9,7 +9,7 @@ import Stripe from 'stripe';
 dotenv.config();
 console.log('NODE ENV:', process.env.NODE_ENV);
 
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 // dotenv.config();
 const app = express();
