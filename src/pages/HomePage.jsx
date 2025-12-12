@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Heart, Users, MessageCircle } from 'lucide-react';
@@ -7,7 +8,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar currentPage="Home" />
-      
+
       {/* Hero Section */}
       <div className="relative bg-white overflow-hidden">
         <div className="absolute inset-0">
@@ -31,23 +32,23 @@ const HomePage = () => {
               tailored to improve lives and provide support when you need it most.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="/home-nursing"
+              <Link
+                to="/home-nursing"
                 className="w-full sm:w-auto px-8 py-4 bg-primary text-white font-medium rounded-full shadow-lg hover:bg-primary-dark transition-all duration-300 transform hover:scale-105"
               >
                 Our Services
-              </a>
-              <a
-                href="/signup"
+              </Link>
+              <Link
+                to="/signup"
                 className="w-full sm:w-auto px-8 py-4 bg-white text-primary font-medium rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      
+
       {/* Services Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +58,7 @@ const HomePage = () => {
               CARETAKERS provides comprehensive care services to meet various needs.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-primary rounded-2xl p-8 text-white transform hover:scale-105 transition-transform">
               <div className="w-14 h-14 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center mb-6">
@@ -65,45 +66,45 @@ const HomePage = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">Home-Nursing</h3>
               <p className="mb-6">Professional care services for elderly, sick, or individuals needing assistance at home.</p>
-              <a
-                href="/home-nursing"
+              <Link
+                to="/home-nursing"
                 className="inline-flex items-center px-6 py-3 bg-white rounded-full text-primary font-medium"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
-            
+
             <div className="bg-secondary rounded-2xl p-8 text-white transform hover:scale-105 transition-transform">
               <div className="w-14 h-14 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center mb-6">
                 <Users size={24} className="text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4">Adoption</h3>
               <p className="mb-6">Helping children find loving homes through our comprehensive adoption services.</p>
-              <a
-                href="/adoption"
+              <Link
+                to="/adoption"
                 className="inline-flex items-center px-6 py-3 bg-white rounded-full text-secondary font-medium"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
-            
+
             <div className="bg-accent rounded-2xl p-8 text-white transform hover:scale-105 transition-transform">
               <div className="w-14 h-14 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center mb-6">
                 <MessageCircle size={24} className="text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4">Companionship</h3>
               <p className="mb-6">Providing emotional support and companionship through calls and messages.</p>
-              <a
-                href="/companionship"
+              <Link
+                to="/companionship"
                 className="inline-flex items-center px-6 py-3 bg-white rounded-full text-accent font-medium"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );
