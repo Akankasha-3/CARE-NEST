@@ -16,7 +16,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server/server.js",
-    "postinstall": "vite build"
+    
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^5.4.1",
