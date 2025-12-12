@@ -72,8 +72,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={16} className="mr-2 mt-1 text-gray-400" />
                 <span className="text-gray-300">
-                  123 Care Street, Suite 456<br />
-                  Wellness City, WC 98765
+                  45 Beach Road, Dwaraka Apartments<br />
+                  Visakhapatnam, Andhra Pradesh 530001
                 </span>
               </li>
             </ul>
