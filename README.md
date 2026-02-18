@@ -30,8 +30,8 @@ CareNest is a service-based web platform that connects people with **Home Nursin
     │   ├── components/     # Reusable UI components (Navbar, Footer, Cards, etc.)
     │   ├── pages/          # App pages (Home, Services, Contact, etc.)
     │   ├── utils/          # Helper functions
-    │   ├── App.tsx         # Root React component
-    │   ├── main.tsx        # React entry file
+    │   ├── App.jsx         # Root React component
+    │   ├── main.jsx        # React entry file
     │   ├── index.css       # Global styles
     │   └── vite-env.d.ts   # TypeScript env defs
     │
